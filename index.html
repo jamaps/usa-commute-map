@@ -60,12 +60,14 @@
 }
 
 #title {
-  width: 150px;
+  width: 32px;
+  height: 32px;
   background-color: white;
-  border-radius: 4px;
+  border-radius: 20px;
   border: solid;
   border-color: white;
-  opacity: 0.95;
+  padding-top: 0px;
+  opacity: 0.9;
   margin-right: 12px;
   margin-top: 12px;
   font-family: 'Ubuntu', sans-serif;
@@ -74,6 +76,12 @@
   float: right;
   position: relative;
 }
+
+#title:hover {
+  opacity: 1;
+  background-color:  #ff3333;
+}
+
 
 
 
@@ -87,7 +95,10 @@
 
   <div id="labels" class="clock leaflet-control"  onclick="togglelabels()">Toggle Labels</div>
 
-  <div id="title" class="clock leaflet-control">Commuting Flows</div>
+  <div id="title" class="clock leaflet-control">
+
+    <a href="https://github.com/jamaps/usa-commute-map" target="_blank"><img src="data/GitHub-Mark-32px.png"><img></>
+  </div>
 
   <script>
       var map = L.map('map').setView([39.18535107607081, -97.33007416657604], 5.0);
